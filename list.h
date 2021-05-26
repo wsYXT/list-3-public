@@ -14,6 +14,7 @@ struct singly_linked_list {
 };
 
 struct singly_linked_list *create_list();
+struct node* create_node(T e);
 
 struct singly_linked_list *insert(struct singly_linked_list *t, int i, T e);
 struct singly_linked_list *delete_at(struct singly_linked_list *t, int i);
@@ -22,3 +23,4 @@ int size( struct singly_linked_list *t );
 T get( struct singly_linked_list *t, int i );
 void replace( struct singly_linked_list *t, int i, T e );
 int index( struct singly_linked_list *t, T e );
+void output(struct singly_linked_list* t);
